@@ -1,0 +1,1789 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Петербург сквозь года с Владимиром Заруцким</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+@font-face {
+font-family: 'BERNIERDISTRESSED';
+src: url('fonts/BERNIERDISTRESSED-REGULAR.OTF') format('opentype');
+font-weight: normal;
+font-style: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'BERNIERDISTRESSED', sans-serif;
+font-weight: normal;
+}
+body, p, li, span {
+font-family: 'PT Sans', sans-serif;
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body {
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+.footer a {
+  color: #e67e22 !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer a:hover {
+  color: #2980b9 !important;
+}
+.navbar {
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 1000;
+background-color: rgba(240, 240, 240, 0.8);
+box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.navbar-brand-logo {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-right: 15px;
+  text-decoration: none;
+}
+.navbar-brand-logo img {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+.navbar-brand-logo img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 70%);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
+}
+.navbar-brand-logo:hover img {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  filter: invert(1);
+}
+.navbar-brand-logo img::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s;
+}
+.navbar-brand-logo:hover img::after {
+  width: 100%;
+  height: 100%;
+}
+.nav-link {
+  color: #555 !important;
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  padding-left: 1.2rem !important;
+  padding-right: 1.2rem !important;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+.nav-link:hover {
+  color: #2980b9 !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  transform: translateY(-2px);
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #2980b9;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+.nav-link:hover::after {
+  width: 80%;
+}
+.social-icons {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+.social-icons a {
+  margin: 0 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+.social-icons a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 70%);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
+}
+.social-icons a:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.social-icons a.telegram:hover {
+  background-color: #0088cc;
+}
+.social-icons a.whatsapp:hover {
+  background-color: #25D366;
+}
+.social-icons a::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s;
+}
+.social-icons a:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.social-icons svg {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+.social-icons a:hover svg {
+  transform: scale(1.1);
+}
+.social-icons a:hover svg path {
+  fill: white;
+}
+.hero-section {
+background: url('img/bg-head.jpg') left center/cover no-repeat;
+min-height: 100vh;
+height: 100vh;
+position: relative;
+display: flex;
+align-items: center;
+padding-top: 80px;
+}
+.hero-content {
+max-width: 600px;
+margin-top: -80px;
+}
+.hero-title {
+font-size: 6.5rem;
+color: #e67e22;
+text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+margin-top: 0;
+line-height: 0.9;
+}
+.hero-title-small {
+font-family: 'BERNIERDISTRESSED', sans-serif;
+font-size: 5.3rem;
+color: #e67e22;
+text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+margin-top: -0.3rem;
+line-height: 0.9;
+}
+.hero-subtitle {
+font-size: 2.55rem;
+color: #2980b9;
+text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+margin-bottom: 20px;
+}
+.btn-orange {
+background-color: #e67e22;
+color: white;
+border: none;
+padding: 12px 30px;
+font-weight: bold;
+border-radius: 5px;
+transition: all 0.3s ease;
+outline: none !important;
+}
+.btn-orange:hover {
+background-color: #2980b9;
+transform: translateY(-2px);
+}
+.btn-orange:focus,
+.btn-orange:active {
+outline: none !important;
+box-shadow: none !important;
+}
+.feature-boxes-overlap {
+position: absolute;
+bottom: -60px;
+left: 0;
+right: 0;
+z-index: 100;
+}
+.feature-box {
+background: url('img/d.png') center/cover no-repeat, rgba(255, 255,255, 0.8);
+border: 3px solid #e67e22;
+border-radius: 0;
+padding: 25px 15px;
+text-align: center;
+box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+transition: transform 0.3s ease;
+min-height: 110px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+font-size: 1.1em;
+line-height: 1.3;
+cursor: pointer;
+text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+}
+.feature-box strong {
+font-size: 1.1em;
+color: #2980b9;
+text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+}
+.feature-box span:not(strong) {
+color: #000 !important;
+font-weight: 700 !important;
+text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+}
+.no-flex {
+display: block;
+}
+.feature-box:hover {
+transform: translateY(-5px);
+background-color: rgba(255, 255, 255, 0.9);
+text-shadow: 3px 3px 7px rgba(0,0,0,0.5);
+}
+.section-title {
+font-size: 2.5rem;
+color: #e67e22;
+margin-bottom: 40px;
+text-align: center;
+}
+.materials-icons {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+margin: 30px 0;
+}
+.material-item {
+text-align: center;
+margin: 20px;
+cursor: pointer;
+}
+.material-item img {
+width: 80px;
+height: 80px;
+object-fit: contain;
+}
+.paint-list {
+  background: url('img/d.png') center/cover no-repeat, #f0f0f0;
+  border: 3px solid #e67e22;
+  border-radius: 0;
+  padding: 20px;
+  margin-top: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 40%;
+  margin: 10px auto;
+  display: none;
+}
+.paint-list ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 5px 0;
+}
+.paint-list ul li {
+  font-weight: 700;
+  color: #000;
+  padding-left: 1.2em;
+  position: relative;
+  margin-bottom: 8px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+.paint-list ul li::before {
+  content: "•";
+  color: #e67e22;
+  position: absolute;
+  left: 0;
+  font-size: 1.2em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.paint-list h6 {
+color: #2980b9;
+font-weight: 700;
+font-family: 'PT Sans', sans-serif;
+text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+.paint-list .header-btn {
+display: inline-block;
+padding: 5px 15px;
+background-color: #e1f0fa;
+color: #000000;
+border: 2px solid #3498db;
+border-radius: 20px;
+font-weight: 700;
+font-family: 'PT Sans', sans-serif;
+font-size: 1rem;
+margin-bottom: 15px;
+box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+cursor: pointer;
+text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+.pricing-cards {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 20px;
+margin: 40px 0;
+}
+.pricing-card {
+background: white;
+border: none;
+border-radius: 0;
+padding: 0 20px 20px 20px;
+width: 300px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+transition: transform 0.3s ease;
+overflow: hidden;
+}
+.pricing-card:hover {
+transform: translateY(-5px);
+}
+.pricing-header {
+background-color: #2980b9;
+color: white;
+padding: 15px;
+text-align: center;
+font-size: 1.8rem;
+font-weight: bold;
+border-radius: 0;
+margin: -2px -22px 20px -22px;
+font-family: 'BERNIERDISTRESSED', sans-serif;
+letter-spacing: 2px;
+text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+.pricing-header:before {
+content: none !important;
+}
+.price-original {
+font-size: 1.5rem;
+color: #2980b9 !important;
+text-decoration: line-through;
+margin: 10px 0;
+text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+text-align: center;
+}
+.price-discount {
+font-size: 2rem;
+color: #2980b9 !important;
+font-weight: bold;
+margin: 10px 0;
+text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+text-align: center;
+}
+.currency-selector {
+display: flex;
+justify-content: center;
+margin: 10px 0;
+}
+.currency-btn {
+background: #f8f9fa;
+border: 1px solid #ddd;
+padding: 8px 20px;
+margin: 0 8px;
+cursor: pointer;
+border-radius: 6px;
+font-weight: 700;
+color: #555;
+transition: all 0.3s ease;
+font-size: 1.2rem;
+min-width: 50px;
+box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+outline: none !important;
+}
+.currency-btn.active {
+background: #e67e22;
+color: white !important;
+border-color: #e67e22;
+transform: scale(1.05);
+box-shadow: 0 3px 8px rgba(230, 126, 34, 0.3);
+}
+.currency-btn:hover {
+transform: translateY(-2px);
+box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+background: #f0f0f0;
+}
+.currency-btn:focus,
+.currency-btn:active {
+outline: none !important;
+box-shadow: none !important;
+}
+.faq-item {
+  border: none;
+  border-radius: 10px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+.faq-question {
+  background: #2980b9;
+  padding: 15px 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  font-size: 1.1em !important;
+  font-weight: 700 !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2) !important;
+}
+.faq-answer {
+  padding: 20px;
+  display: none;
+  background: url('img/d.png') center/cover no-repeat, white;
+}
+.faq-answer p {
+font-size: 1.1em !important;
+font-weight: 700 !important;
+text-shadow: 2px 2px 4px rgba(0,0,0,0.3) !important;
+color: inherit !important;
+line-height: 1.5;
+margin-bottom: 1rem;
+}
+.footer {
+  background: #f0f0f0;
+  padding: 30px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+.social-icons-footer {
+margin: 20px 0;
+}
+.social-icons-footer a {
+margin: 0 10px;
+font-size: 1.5rem;
+color: #3498db;
+}
+#for-whom {
+position: relative;
+z-index: 90;
+padding-top: 140px;
+padding-bottom: 50px;
+}
+.pricing-card ul {
+list-style-type: none;
+padding-left: 0;
+margin: 0;
+}
+.pricing-card ul li {
+font-weight: 700 !important;
+margin-bottom: 10px;
+padding-left: 0;
+position: relative;
+line-height: 1.4;
+text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+display: table;
+width: 100%;
+}
+.pricing-card ul li .orange-dot {
+color: #e67e22;
+font-size: 1.1em;
+font-weight: normal;
+margin-right: 0.8em;
+display: table-cell;
+width: 20px;
+vertical-align: top;
+padding-top: 2px;
+text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+.pricing-card ul li .li-text {
+display: table-cell;
+vertical-align: top;
+padding-left: 0;
+text-indent: 0;
+}
+.pricing-card ul li.strikethrough {
+text-decoration: line-through;
+color: rgba(117, 117, 117, 0.7) !important;
+opacity: 0.8;
+}
+.pricing-card ul li.strikethrough .orange-dot {
+color: rgba(230, 126, 34, 0.5) !important;
+opacity: 0.7;
+}
+.gold-coin {
+    display: inline-block;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FFD700 100%);
+    color: #8B4513;
+    font-weight: bold;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin: 0;
+    font-size: 0.85em;
+    box-shadow: 
+        0 2px 3px rgba(0,0,0,0.2),
+        inset 0 -1px 2px rgba(139, 69, 19, 0.2),
+        inset 0 1px 2px rgba(255, 255, 255, 0.4);
+    position: relative;
+    overflow: hidden;
+    text-shadow: 1px 1px 1px rgba(139, 69, 19, 0.3);
+    z-index: 1;
+    flex-shrink: 0;
+    vertical-align: middle;
+}
+.gold-coin:before {
+    content: '';
+    position: absolute;
+    top: -2.5px;
+    left: -2.5px;
+    right: -2.5px;
+    bottom: -2.5px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FFD700 100%);
+    z-index: -1;
+}
+.gold-coin:after {
+    content: '';
+    position: absolute;
+    top: 1.5px;
+    left: 1.5px;
+    right: 1.5px;
+    bottom: 1.5px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FFD700 100%);
+    z-index: -1;
+    box-shadow: inset 0 0 0 1.5px #8B4513;
+}
+.gold-coin .coin-inner {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.4) 100%);
+    pointer-events: none;
+    z-index: 0;
+}
+.gold-coin .dollar-sign {
+    position: relative;
+    z-index: 2;
+    font-weight: 900;
+}
+.bonus-item {
+    display: table;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    width: 100%;
+}
+.bonus-item .orange-dot {
+    display: table-cell;
+    color: #e67e22;
+    width: 20px;
+    vertical-align: top;
+    padding-top: 4px;
+}
+.bonus-content {
+    display: table-cell;
+    vertical-align: top;
+}
+.bonus-content .gold-coin {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 6px;
+}
+.bonus-content .bonus-text {
+    display: inline;
+    vertical-align: top;
+}
+#pricing {
+background: url('img/bg-tarif.jpg') center/cover no-repeat;
+position: relative;
+padding: 80px 0 150px;
+margin-bottom: 0;
+}
+#pricing::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(255, 255, 255, 0.0);
+z-index: 0;
+}
+#pricing .container {
+position: relative;
+z-index: 1;
+}
+#faq {
+padding: 80px 0 50px;
+margin-top: 80px;
+}
+#faq .section-title {
+font-size: 4rem;
+text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+line-height: 1.0;
+}
+.vip-collage-container {
+  position: relative;
+  cursor: pointer;
+}
+.vip-collage {
+  transition: all 0.3s ease;
+  position: relative;
+  width: 100%;
+}
+.vip-collage:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.vip-hover-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(50, 50, 50, 0.7);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  border-radius: 5px;
+  pointer-events: none;
+}
+.vip-collage-container:hover .vip-hover-label {
+  opacity: 1;
+}
+.vip-hover-icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  animation: pulse 2s infinite;
+}
+.vip-hover-text {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 15px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+.gallery-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2000;
+  overflow-y: auto;
+}
+.gallery-modal.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery-container {
+  background: rgba(50, 50, 50, 0.3);
+  width: 90%;
+  max-width: 1000px;
+  max-height: 90vh;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  backdrop-filter: blur(5px);
+}
+.gallery-header {
+  background: #e67e22;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gallery-title {
+  font-family: 'BERNIERDISTRESSED', sans-serif;
+  font-size: 1.8rem;
+  margin: 0;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+  letter-spacing: 0.5px;
+}
+.close-gallery {
+  background: #2980b9;
+  border: none;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.close-gallery:hover {
+  background: #1a5276;
+  transform: rotate(90deg);
+}
+.gallery-content {
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-image-wrapper {
+  display: block;
+  position: relative;
+  margin: 0 auto 30px;
+  max-width: 100%;
+  text-align: center;
+  min-height: 300px;
+}
+.main-image {
+  max-width: 100%;
+  max-height: 400px;
+  display: inline-block;
+  transition: opacity 2s ease-out;
+  border-radius: 5px;
+  vertical-align: middle;
+  opacity: 0;
+}
+.main-image.loaded {
+  opacity: 1;
+}
+.image-glow-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 1;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 1.5s ease-out;
+}
+.image-glow-container.active {
+  box-shadow: 
+    0 0 40px rgba(230, 126, 34, 0.9),
+    0 0 70px rgba(230, 126, 34, 0.7),
+    0 0 100px rgba(230, 126, 34, 0.4),
+    inset 0 0 25px rgba(255, 165, 0, 0.6);
+  animation: glow-pulse 4s infinite alternate ease-in-out;
+}
+@keyframes glow-pulse {
+  0% {
+    box-shadow: 
+      0 0 30px rgba(230, 126, 34, 0.6),
+      0 0 50px rgba(230, 126, 34, 0.4),
+      0 0 80px rgba(230, 126, 34, 0.2),
+      inset 0 0 15px rgba(255, 165, 0, 0.4);
+    opacity: 0.6;
+  }
+  50% {
+    box-shadow: 
+      0 0 50px rgba(230, 126, 34, 0.95),
+      0 0 80px rgba(230, 126, 34, 0.7),
+      0 0 120px rgba(230, 126, 34, 0.4),
+      inset 0 0 30px rgba(255, 165, 0, 0.7);
+    opacity: 0.9;
+  }
+  100% {
+    box-shadow: 
+      0 0 35px rgba(230, 126, 34, 0.7),
+      0 0 60px rgba(230, 126, 34, 0.5),
+      0 0 90px rgba(230, 126, 34, 0.3),
+      inset 0 0 20px rgba(255, 165, 0, 0.5);
+    opacity: 0.7;
+  }
+}
+.thumbnail-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 15px;
+  background: transparent;
+  padding: 15px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.thumbnail {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: rgba(60, 60, 60, 0.9);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  position: relative;
+}
+.thumbnail:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+.thumbnail.active {
+  transform: scale(1.1);
+  box-shadow: 
+    0 0 30px rgba(230, 126, 34, 1),
+    0 0 50px rgba(230, 126, 34, 0.7),
+    inset 0 0 15px rgba(255, 165, 0, 0.5);
+  animation: thumbnail-pulse 3s infinite alternate ease-in-out;
+}
+@keyframes thumbnail-pulse {
+  0% {
+    box-shadow: 
+      0 0 25px rgba(230, 126, 34, 0.7),
+      0 0 40px rgba(230, 126, 34, 0.5),
+      inset 0 0 10px rgba(255, 165, 0, 0.4);
+    transform: scale(1.08);
+  }
+  100% {
+    box-shadow: 
+      0 0 35px rgba(230, 126, 34, 1),
+      0 0 55px rgba(230, 126, 34, 0.8),
+      inset 0 0 20px rgba(255, 165, 0, 0.6);
+    transform: scale(1.1);
+  }
+}
+.gallery-navigation {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  padding: 15px 0;
+  background: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+}
+.nav-btn {
+  background: #e67e22;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 120px;
+  justify-content: center;
+}
+.nav-btn:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.nav-btn:disabled {
+  background: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+.nav-btn i {
+  font-size: 1.1rem;
+}
+.gallery-locked {
+  pointer-events: none;
+  opacity: 0.6;
+}
+@media (max-width: 768px) {
+  .gallery-container {
+    width: 95%;
+    max-height: 95vh;
+  }
+  .main-image {
+    max-height: 300px;
+  }
+  .thumbnail {
+    width: 60px;
+    height: 60px;
+  }
+  .gallery-title {
+    font-size: 1.5rem;
+  }
+  .gallery-navigation {
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .vip-hover-icon {
+    font-size: 2rem;
+  }
+  .vip-hover-text {
+    font-size: 1rem;
+  }
+  .thumbnail.active {
+    transform: scale(1.08);
+    box-shadow: 
+      0 0 25px rgba(230, 126, 34, 0.9),
+      0 0 35px rgba(230, 126, 34, 0.7);
+  }
+  .image-glow-container.active {
+    box-shadow: 
+      0 0 30px rgba(230, 126, 34, 0.9),
+      0 0 50px rgba(230, 126, 34, 0.6),
+      inset 0 0 20px rgba(255, 165, 0, 0.5);
+  }
+  @keyframes glow-pulse-mobile {
+    0% {
+      box-shadow: 
+        0 0 20px rgba(230, 126, 34, 0.7),
+        0 0 35px rgba(230, 126, 34, 0.5),
+        inset 0 0 10px rgba(255, 165, 0, 0.4);
+      opacity: 0.5;
+    }
+    100% {
+      box-shadow: 
+        0 0 30px rgba(230, 126, 34, 0.9),
+        0 0 50px rgba(230, 126, 34, 0.7),
+        inset 0 0 15px rgba(255, 165, 0, 0.6);
+      opacity: 0.8;
+    }
+  }
+  .image-glow-container.active {
+    animation: glow-pulse-mobile 4s infinite alternate ease-in-out;
+  }
+}
+@media (max-width: 768px) {
+.hero-section {
+height: auto;
+min-height: 90vh;
+padding-top: 100px;
+padding-bottom: 120px;
+}
+.hero-title {
+font-size: 3.5rem;
+}
+.hero-title-small {
+font-size: 2.8rem;
+}
+.hero-subtitle {
+font-size: 1.5rem;
+}
+.pricing-card {
+width: 100%;
+max-width: 400px;
+}
+.section-title {
+font-size: 2rem;
+}
+.feature-boxes-overlap {
+position: relative;
+bottom: 0;
+margin-top: 40px;
+margin-bottom: 20px;
+}
+#for-whom {
+padding-top: 40px;
+}
+.feature-box {
+margin-bottom: 15px;
+min-height: 90px;
+padding: 15px 10px;
+font-size: 1em;
+}
+.navbar-brand-logo img {
+  height: 70px;
+  width: 70px;
+}
+.paint-list {
+  max-width: 90%;
+  border-radius: 0;
+}
+#pricing {
+padding: 60px 0 100px;
+}
+#faq {
+padding: 60px 0 30px;
+margin-top: 50px;
+}
+#faq .section-title {
+font-size: 2.5rem;
+}
+.gold-coin {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 0.8em;
+}
+.gold-coin:before {
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+}
+.gold-coin:after {
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+}
+.gold-coin .coin-inner {
+    top: 2.5px;
+    left: 2.5px;
+    right: 2.5px;
+    bottom: 2.5px;
+}
+.currency-btn {
+padding: 6px 15px;
+margin: 0 5px;
+font-size: 1.1rem;
+min-width: 45px;
+}
+.bonus-item .orange-dot {
+    padding-top: 3px;
+}
+.pricing-card ul li .orange-dot {
+    padding-top: 1px;
+}
+.nav-link {
+  font-size: 1rem;
+  padding-left: 0.8rem !important;
+  padding-right: 0.8rem !important;
+  letter-spacing: 0.3px;
+}
+.social-icons {
+  margin-left: 10px;
+}
+.social-icons a {
+  width: 42px;
+  height: 42px;
+  margin: 0 6px;
+}
+.social-icons svg {
+  width: 28px;
+  height: 28px;
+}
+}
+@media (max-width: 992px) and (min-width: 769px) {
+.hero-title {
+font-size: 4.5rem;
+}
+.hero-title-small {
+font-size: 3.8rem;
+}
+.hero-subtitle {
+font-size: 2rem;
+}
+#faq .section-title {
+font-size: 3rem;
+}
+.gold-coin {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 0.85em;
+}
+.nav-link {
+  font-size: 1.05rem;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  letter-spacing: 0.4px;
+}
+.social-icons a {
+  width: 42px;
+  height: 42px;
+}
+.social-icons svg {
+  width: 30px;
+  height: 30px;
+}
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light">
+<div class="container">
+<a class="navbar-brand-logo" href="https://t.me/John_Bykov" target="_blank" rel="noopener noreferrer">
+  <img src="img/logo.png" alt="Логотип">
+</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item"><a class="nav-link" href="#for-whom">О чем курс</a></li>
+<li class="nav-item"><a class="nav-link" href="#pricing">Программа курса</a></li>
+<li class="nav-item"><a class="nav-link" href="#faq">Эксперт</a></li>
+<li class="nav-item"><a class="nav-link" href="#pricing">Записаться на курс</a></li>
+<li class="nav-item"><a class="nav-link" href="#contacts">Контакты</a></li>
+</ul>
+<div class="social-icons">
+<a href="https://t.me/John_Bykov" class="telegram" target="_blank" rel="noopener noreferrer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+<path fill="#0088cc" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.06-.2-.08-.06-.19-.04-.27-.02-.12.03-1.98 1.26-5.6 3.7-.53.36-1.01.54-1.45.53-.48-.02-1.4-.27-2.09-.5-.84-.27-1.51-.42-1.45-.89.03-.25.38-.5 1.05-.77 4.08-1.77 6.8-2.95 8.18-3.54 3.9-1.67 4.71-1.96 5.24-1.98.12 0 .38.03.55.18.13.12.16.28.18.41.02.12.04.39.02.6z"/>
+</svg>
+</a>
+<a href="https://t.me/John_Bykov" class="whatsapp" target="_blank" rel="noopener noreferrer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+<path fill="#25D366" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.91-9.91-9.91zm5.15 13.54c-.25.73-1.31 1.33-2.15 1.43-.58.07-1.33.12-3.88-.8-3.29-1.19-5.4-4.13-5.56-4.32-.16-.19-1.29-1.56-1.29-2.98 0-1.42.71-2.11.96-2.37.25-.26.55-.37.87-.37.22 0 .43.03.62.05.19.02.44-.03.69.37.25.4.86 1.39.94 1.49.08.1.16.23.02.45-.14.22-.25.37-.5.59-.25.22-.48.49-.69.66-.16.14-.34.29-.15.58.19.29.86 1.24 1.85 2.01 1.29.99 2.38 1.31 2.68 1.45.3.14.48.12.66-.08.18-.2.78-.91.99-1.22.21-.31.42-.26.71-.15.29.11 1.83.87 2.15 1.03.32.16.54.24.62.37.08.13.08.75-.17 1.48z"/>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</nav>
+<section class="hero-section" id="about">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-6 hero-content">
+<h1 class="hero-title">ПЕТЕРБУРГ<br><span class="hero-title-small">СКВОЗЬ ГОДА</span></h1>
+<h2 class="hero-subtitle">С ВЛАДИМИРОМ ЗАРУЦКИМ</h2>
+<div class="hero-text" style="margin-top: 40px;">
+<p style="font-weight: 700; font-size: 1.1em; margin-bottom: 0.5rem; padding-left: 0.8em; text-indent: -0.8em; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+<span style="color: #e67e22; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">•</span> 
+Нарисуйте <span style="color: #2980b9; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">12 пейзажей</span>: от ретро Петербурга до сегодняшних дней
+</p>
+<p style="font-weight: 700; font-size: 1.1em; margin-bottom: 0.5rem; padding-left: 0.8em; text-indent: -0.8em; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+<span style="color: #e67e22; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">•</span> 
+Изучите <span style="color: #2980b9; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">способы передачи особенностей архитектуры</span> с помощью акварели
+</p>
+<p style="font-weight: 700; font-size: 1.1em; margin-bottom: 0.5rem; padding-left: 0.8em; text-indent: -0.8em; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+<span style="color: #e67e22; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">•</span> 
+Научитесь передавать <span style="color: #2980b9; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">художественные образы и замыслы</span>
+</p>
+</div>
+<button class="btn btn-orange mt-5" id="learn-more-btn">УЗНАТЬ ПОДРОБНОСТИ</button>
+</div>
+<div class="col-lg-6 text-center" style="margin-top: -20px;">
+<img src="img/img-2x-scale-2_00x.png" alt="Акварельные картины" class="img-fluid">
+</div>
+</div>
+</div>
+<div class="feature-boxes-overlap">
+<div class="container">
+<div class="row">
+<div class="col-md-3">
+<div class="feature-box" data-scroll-to="materials">
+<strong>Материал:</strong> <span>акварель</span>
+</div>
+</div>
+<div class="col-md-3">
+<div class="feature-box" data-scroll-to="pricing">
+<strong>Количество картин:</strong> <span>12</span>
+</div>
+</div>
+<div class="col-md-3">
+<div class="feature-box no-flex" data-scroll-to="pricing">
+<strong>Продолжительность курса:</strong> <span>20 часов</span>
+</div>
+</div>
+<div class="col-md-3">
+<div class="feature-box" data-scroll-to="pricing">
+<strong>Доступ:</strong> <span>бессрочный</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-5" id="for-whom">
+<div class="container">
+<div style="display: flex; margin-top: 100px;">
+<div style="border: 3px solid #e67e22; border-right: none; background: url('img/bg.jpg') center/cover no-repeat; padding: 20px; width: 600px; height: 400px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; margin-top: 220px;">
+<h2 class="section-title" style="font-size: 4rem; line-height: 1.0; text-shadow: 3px 3px 6px rgba(0,0,0,0.4);">ДЛЯ КОГО БУДЕТ ПОЛЕЗЕН КУРС</h2>
+<p style="font-weight: 700; font-size: 1.1em; margin-bottom: 0.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">На курсе «Петербург сквозь года с Владимиром Заруцким» вы научитесь рисовать акварелью городские пейзажи. Этот курс для тех, кто хочет <span style="color: #2980b9;">научиться или усовершенствовать свои навыки в акварели</span>. Уверен, что вам понравится!</p>
+</div>
+<img src="img/img-2x-scale-2_00x.jpg" alt="Зимний Петербург" class="img-fluid" style="border: 3px solid #e67e22; width: 600px; height: 839px; object-fit: cover;">
+</div>
+</div>
+</section>
+<section class="py-5" id="materials">
+<div class="container">
+<h2 class="section-title" style="font-size: 4rem; line-height: 1.0; text-shadow: 3px 3px 6px rgba(0,0,0,0.4);">МАТЕРИАЛЫ НА КУРС</h2>
+<div class="materials-icons">
+<div class="material-item" id="paints">
+<img src="img/1.png" alt="Краски">
+<p style="font-weight: 700; color: #2980b9; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">Краски</p>
+</div>
+<div class="material-item" id="brushes">
+<img src="img/2.png" alt="Кисти">
+<p style="font-weight: 700; color: #2980b9; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">Кисти</p>
+</div>
+<div class="material-item" id="paper">
+<img src="img/3.png" alt="Бумага">
+<p style="font-weight: 700; color: #2980b9; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">Бумага</p>
+</div>
+<div class="material-item" id="pencil">
+<img src="img/4.png" alt="Карандаш">
+<p style="font-weight: 700; color: #2980b9; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">Карандаш 2В, 3В</p>
+</div>
+</div>
+<div class="paint-list" id="pencil-list">
+<div class="header-btn">КАРАНДАШИ</div>
+<div class="row">
+<div class="col-md-6">
+<ul>
+<li>Карандаш 2В</li>
+<li>Карандаш 3В</li>
+</ul>
+</div>
+<div class="col-md-6">
+<ul>
+<li>Ластик</li>
+<li>Точилка</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="paint-list" id="paint-list">
+<div class="header-btn">СПИСОК КРАСОК</div>
+<div class="row">
+<div class="col-md-6">
+<ul>
+<li>Кобальт лазурно-голубой</li>
+<li>Горизонт синий</li>
+<li>Кобальт бирюзовый</li>
+<li>Церулеум</li>
+<li>Сиена натуральная</li>
+<li>Охра красная</li>
+</ul>
+</div>
+<div class="col-md-6">
+<ul>
+<li>Сиена жженая</li>
+<li>Пиррол оранжевый</li>
+<li>Кадмий красный светлый</li>
+<li>Опера</li>
+<li>Кобальт</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="paint-list" id="brushes-list">
+<div class="header-btn">СПИСОК КИСТЕЙ</div>
+<div class="row">
+<div class="col-md-6">
+<ul>
+<li>Круглая кисть №2</li>
+<li>Круглая кисть №6</li>
+<li>Круглая кисть №10</li>
+<li>Плоская кисть №8</li>
+<li>Плоская кисть №12</li>
+</ul>
+</div>
+<div class="col-md-6">
+<ul>
+<li>Кисть "Кошачий язык"</li>
+<li>Кисть "Кошачий язык"</li>
+<li>Флейц №16</li>
+<li>Филигрань №0</li>
+<li>Моп №20</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="paint-list" id="paper-list">
+<div class="header-btn">ВИДЫ БУМАГИ</div>
+<div class="row">
+<div class="col-md-6">
+<ul>
+<li>Акварельная бумага Canson</li>
+<li>Бумага Arches Aquarelle</li>
+<li>Бумага Fabriano</li>
+</ul>
+</div>
+<div class="col-md-6">
+<ul>
+<li>Бумага для акварели 300 г/м²</li>
+<li>Текстурная бумага cold press</li>
+<li>Гладкая бумага hot press</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-5" id="pricing">
+<div class="container">
+<h2 class="section-title" style="font-size: 4rem; line-height: 1.0; text-shadow: 3px 3px 6px rgba(0,0,0,0.4);">ТАРИФЫ</h2>
+<div class="pricing-cards">
+<div class="pricing-card">
+<div class="pricing-header">РИСУЮ САМ</div>
+<div class="text-center mt-3">
+<img src="img/tarif.png" alt="Коллаж" class="img-fluid">
+</div>
+<ul class="mt-3">
+<li>
+<span class="orange-dot">•</span>
+<span class="li-text">12 пейзажей: от ретро Петербурга до сегодняшних дней</span>
+</li>
+<li>
+<span class="orange-dot">•</span>
+<span class="li-text">17 уроков: теория + практика + развивающие упражнения</span>
+</li>
+<li class="strikethrough">
+<span class="orange-dot">•</span>
+<span class="li-text">Личная часовая онлайн-консультация с экспертом курса</span>
+</li>
+</ul>
+<div class="price-original">7 990 ₽</div>
+<div class="price-discount">4 990 ₽</div>
+<div class="currency-selector">
+<span class="currency-btn active" data-currency="₽">₽</span>
+<span class="currency-btn" data-currency="$">$</span>
+<span class="currency-btn" data-currency="€">€</span>
+</div>
+<a href="https://t.me/John_Bykov" target="_blank" rel="noopener noreferrer" class="btn btn-orange btn-block mt-3" style="text-decoration: none;">ПРИНЯТЬ УЧАСТИЕ</a>
+</div>
+<div class="pricing-card">
+<div class="pricing-header">С ПОДДЕРЖКОЙ</div>
+<div class="text-center mt-3">
+<img src="img/tarif.png" alt="Коллаж" class="img-fluid">
+</div>
+<ul class="mt-3">
+<li>
+<span class="orange-dot">•</span>
+<span class="li-text">12 пейзажей: от ретро Петербурга до сегодняшних дней</span>
+</li>
+<li>
+<span class="orange-dot">•</span>
+<span class="li-text">17 уроков: теория + практика + развивающие упражнения</span>
+</li>
+<li class="strikethrough">
+<span class="orange-dot">•</span>
+<span class="li-text">Личная часовая онлайн-консультация с экспертом курса</span>
+</li>
+<li class="bonus-item">
+<span class="orange-dot">•</span>
+<div class="bonus-content">
+<span class="gold-coin"><span class="dollar-sign">$</span><div class="coin-inner"></div></span>
+<span class="bonus-text">
+<strong>+1000 бонусных рублей!</strong> Можно потратить при покупке курса на следующем марафоне. Сгорают через 3 месяца
+</span>
+</div>
+</li>
+</ul>
+<div class="price-original">9 990 ₽</div>
+<div class="price-discount">5 990 ₽</div>
+<div class="currency-selector">
+<span class="currency-btn active" data-currency="₽">₽</span>
+<span class="currency-btn" data-currency="$">$</span>
+<span class="currency-btn" data-currency="€">€</span>
+</div>
+<a href="https://t.me/John_Bykov" target="_blank" rel="noopener noreferrer" class="btn btn-orange btn-block mt-3" style="text-decoration: none;">ПРИНЯТЬ УЧАСТИЕ</a>
+</div>
+<div class="pricing-card">
+<div class="pricing-header">VIP</div>
+<div class="text-center mt-3 vip-collage-container">
+<img src="img/collage.png" alt="VIP Коллаж" class="img-fluid vip-collage" id="vip-collage">
+<div class="vip-hover-label">
+  <div class="vip-hover-icon">
+    <i class="fas fa-images"></i>
+  </div>
+  <div class="vip-hover-text">
+    Нажмите для просмотра<br>галереи работ
+  </div>
+</div>
+</div>
+<ul class="mt-3">
+<li>
+<span class="orange-dot">•</span>
+<span class="li-text">12 пейзажей: от ретро Петербурга до сегодняшних дней</span>
+</li>
+<li>
+<span class="orange-dot">•</span>
+<span class="li-text">17 уроков: теория + практика + развивающие упражнения</span>
+</li>
+<li>
+<span class="orange-dot">•</span>
+<span class="li-text">Личная часовая онлайн-консультация с экспертом курса</span>
+</li>
+</ul>
+<div class="price-original">22 980 ₽</div>
+<div class="price-discount">15 990 ₽</div>
+<div class="currency-selector">
+<span class="currency-btn active" data-currency="₽">₽</span>
+<span class="currency-btn" data-currency="$">$</span>
+<span class="currency-btn" data-currency="€">€</span>
+</div>
+<a href="https://t.me/John_Bykov" target="_blank" rel="noopener noreferrer" class="btn btn-orange btn-block mt-3" style="text-decoration: none;">ПРИНЯТЬ УЧАСТИЕ</a>
+</div>
+</div>
+</div>
+</section>
+<div class="gallery-modal" id="galleryModal">
+  <div class="gallery-container">
+    <div class="gallery-header">
+      <h3 class="gallery-title">VIP - ГАЛЕРЕЯ РАБОТ</h3>
+      <button class="close-gallery" id="closeGallery">&times;</button>
+    </div>
+    <div class="gallery-content">
+      <div class="main-image-wrapper" id="mainImageWrapper">
+        <img src="" alt="" class="main-image" id="mainImage">
+        <div class="image-glow-container" id="imageGlowContainer"></div>
+      </div>
+      <div class="thumbnail-container" id="thumbnailContainer">
+      </div>
+      <div class="gallery-navigation">
+        <button class="nav-btn" id="prevBtn">
+          <i class="fas fa-chevron-left"></i> Назад
+        </button>
+        <button class="nav-btn" id="nextBtn">
+          Вперед <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="py-5" id="faq">
+<div class="container">
+<h2 class="section-title">ЧАСТЫЕ ВОПРОСЫ</h2>
+<div class="faq-item">
+<div class="faq-question">
+Я совсем не умею рисовать. Стоит ли мне идти на курс?
+<i class="fas fa-chevron-right"></i>
+</div>
+<div class="faq-answer">
+<p>Конечно, стоит! Курс специально построен так, что сначала идут простые картины, а потом более сложные, поэтому вы успеете влиться в процесс и достичь высоких результатов!</p>
+<p>Для опытных художников курс также будет полезен. Вы сможете ещё больше отработать технику, а также расширить свой визуальный опыт.</p>
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">
+Как устроена обратная связь?
+<i class="fas fa-chevron-right"></i>
+</div>
+<div class="faq-answer">
+<p>В конце урока вы выложите фотографию своей работы. У преподавателя будет возможность оставить к вашей работе текстовый, графический (пометки на рисунке), а также аудио-комментарий.</p>
+<p>В нижней части каждого урока будет блок комментариев, где можно задавать любые вопросы по обучению.</p>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer" id="contacts">
+<div class="container">
+<p style="font-weight: 700; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); margin-bottom: 0.3rem;">Политика приватности</p>
+<p style="font-weight: 700; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); margin-bottom: 0.3rem;">По всем вопросам вы можете писать в службу поддержки:</p>
+<p style="font-weight: 700; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); margin-bottom: 0.3rem;"><a href="https://t.me/John_Bykov" target="_blank" rel="noopener noreferrer" style="color: #e67e22; text-decoration: none;">admin@sobakarisovaka.ru</a></p>
+<p style="font-weight: 700; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); margin-bottom: 0;">© 2025, ИП Косенко Андрей Владимирович, ОГРН 308614728400011</p>
+</div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script>
+$(document).ready(function() {
+  function saveOriginalPrices() {
+    $('.pricing-card').each(function() {
+      var $card = $(this);
+      var discountText = $card.find('.price-discount').text().trim();
+      var discountRub = parseInt(discountText.replace(/\s/g, '').replace('₽', ''));
+      $card.find('.price-discount').data('original-rub', discountRub);
+      var originalText = $card.find('.price-original').text().trim();
+      var originalRub = parseInt(originalText.replace(/\s/g, '').replace('₽', ''));
+      $card.find('.price-original').data('original-rub', originalRub);
+    });
+  }
+  saveOriginalPrices();
+  $('a[href^="#"]').on('click', function(e) {
+    e.preventDefault();
+    var target = this.hash;
+    var $target = $(target);
+    if ($target.length) {
+      $('html, body').stop().animate({
+        'scrollTop': $target.offset().top - 70
+      }, 900, 'swing');
+    }
+  });
+  $('#learn-more-btn').click(function() {
+    $('html, body').animate({
+      'scrollTop': $('#pricing').offset().top - 70
+    }, 900, 'swing');
+  });
+  $('.feature-box[data-scroll-to="materials"]').click(function() {
+    $('html, body').animate({
+      'scrollTop': $('#materials').offset().top - 70
+    }, 900, 'swing');
+  });
+  $('.feature-box[data-scroll-to="pricing"]').click(function() {
+    $('html, body').animate({
+      'scrollTop': $('#pricing').offset().top - 70
+    }, 900, 'swing');
+  });
+  $('#paints').click(function() {
+    $('#paint-list').slideToggle();
+    $('#brushes-list, #paper-list, #pencil-list').slideUp();
+  });
+  $('#brushes').click(function() {
+    $('#brushes-list').slideToggle();
+    $('#paint-list, #paper-list, #pencil-list').slideUp();
+  });
+  $('#paper').click(function() {
+    $('#paper-list').slideToggle();
+    $('#paint-list, #brushes-list, #pencil-list').slideUp();
+  });
+  $('#pencil').click(function() {
+    $('#pencil-list').slideToggle();
+    $('#paint-list, #brushes-list, #paper-list').slideUp();
+  });
+  $('.header-btn').click(function() {
+    $('#paint-list, #brushes-list, #paper-list, #pencil-list').slideUp();
+  });
+  $('.currency-btn').click(function() {
+    var $this = $(this);
+    var currency = $this.data('currency');
+    if ($this.hasClass('active')) return;
+    $('.currency-btn[data-currency="' + currency + '"]').each(function() {
+      $(this).css({
+        'transform': 'scale(0.95)',
+        'transition': 'all 0.2s ease'
+      });
+    });
+    setTimeout(function() {
+      $('.currency-btn').removeClass('active');
+      $('.currency-btn[data-currency="' + currency + '"]').addClass('active');
+      $('.currency-btn[data-currency="' + currency + '"]').each(function() {
+        $(this).css({
+          'transform': 'scale(1.05)',
+          'transition': 'all 0.3s ease'
+        });
+      });
+      setTimeout(function() {
+        $('.pricing-card').each(function() {
+          var $card = $(this);
+          var discountRub = $card.find('.price-discount').data('original-rub');
+          var originalRub = $card.find('.price-original').data('original-rub');
+          if (currency === '₽') {
+            $card.find('.price-discount').fadeOut(200, function() {
+              $(this).text(discountRub.toLocaleString('ru-RU') + ' ₽').fadeIn(200);
+            });
+            $card.find('.price-original').fadeOut(200, function() {
+              $(this).text(originalRub.toLocaleString('ru-RU') + ' ₽').fadeIn(200);
+            });
+          }
+          else if (currency === '$') {
+            var discountUsd = Math.round(discountRub / 70);
+            var originalUsd = Math.round(originalRub / 70);
+            $card.find('.price-discount').fadeOut(200, function() {
+              $(this).text(discountUsd + ' $').fadeIn(200);
+            });
+            $card.find('.price-original').fadeOut(200, function() {
+              $(this).text(originalUsd + ' $').fadeIn(200);
+            });
+          }
+          else if (currency === '€') {
+            var discountEur = Math.round(discountRub / 80);
+            var originalEur = Math.round(originalRub / 80);
+            $card.find('.price-discount').fadeOut(200, function() {
+              $(this).text(discountEur + ' €').fadeIn(200);
+            });
+            $card.find('.price-original').fadeOut(200, function() {
+              $(this).text(originalEur + ' €').fadeIn(200);
+            });
+          }
+        });
+      }, 100);
+      setTimeout(function() {
+        $('.currency-btn[data-currency="' + currency + '"]').each(function() {
+          $(this).css({
+            'transform': 'scale(1)',
+            'transition': 'all 0.2s ease'
+          });
+        });
+      }, 300);
+    }, 50);
+  });
+  $('.faq-question').click(function() {
+    var $answer = $(this).next('.faq-answer');
+    var $icon = $(this).find('i');
+    if ($answer.is(':visible')) {
+      $answer.slideUp();
+      $icon.removeClass('fa-chevron-down').addClass('fa-chevron-right');
+    } else {
+      $('.faq-answer').slideUp();
+      $('.faq-question i').removeClass('fa-chevron-down').addClass('fa-chevron-right');
+      $answer.slideDown();
+      $icon.removeClass('fa-chevron-right').addClass('fa-chevron-down');
+    }
+  });
+  const galleryImages = [
+    'img/10.png',
+    'img/11.png',
+    'img/12.png',
+    'img/13.png',
+    'img/14.png'
+  ];
+  let currentImageIndex = 0;
+  let isAnimating = false;
+  function showImage(index, isInitial = false) {
+    if (isAnimating && !isInitial) return;
+    if (index < 0 || index >= galleryImages.length) return;
+    isAnimating = true;
+    const $mainImage = $('#mainImage');
+    const $glowContainer = $('#imageGlowContainer');
+    if (!isInitial && $mainImage.attr('src')) {
+      $mainImage.css({
+        'transition': 'opacity 1s ease-out',
+        'opacity': '0'
+      });
+      $glowContainer.removeClass('active');
+      $glowContainer.css('opacity', '0');
+      setTimeout(() => {
+        loadNewImage(index);
+      }, 1000);
+    } else {
+      loadNewImage(index, isInitial);
+    }
+    function loadNewImage(newIndex, isFirst = false) {
+      currentImageIndex = newIndex;
+      const img = new Image();
+      img.onload = function() {
+        $mainImage.attr('src', galleryImages[newIndex]);
+        $mainImage.attr('alt', `Работа ${newIndex + 1}`);
+        $('.thumbnail').removeClass('active');
+        $(`.thumbnail[data-index="${newIndex}"]`).addClass('active');
+        $('#prevBtn').prop('disabled', newIndex === 0);
+        $('#nextBtn').prop('disabled', newIndex === galleryImages.length - 1);
+        setTimeout(() => {
+          updateGlowSize();
+          $mainImage.css({
+            'transition': 'opacity 1.5s ease-out',
+            'opacity': '1'
+          });
+          setTimeout(() => {
+            $glowContainer.addClass('active');
+            setTimeout(() => {
+              isAnimating = false;
+            }, 300);
+          }, 1000);
+        }, 50);
+      };
+      img.src = galleryImages[newIndex];
+    }
+  }
+  function updateGlowSize() {
+    const $mainImage = $('#mainImage');
+    const $glowContainer = $('#imageGlowContainer');
+    const width = $mainImage.width();
+    const height = $mainImage.height();
+    if (width > 0 && height > 0) {
+      $glowContainer.css({
+        width: width + 'px',
+        height: height + 'px'
+      });
+    }
+  }
+  function initThumbnails() {
+    const $container = $('#thumbnailContainer');
+    $container.empty();
+    galleryImages.forEach((img, index) => {
+      const $thumb = $(`
+        <img src="${img}" 
+             alt="Работа ${index + 1}" 
+             class="thumbnail" 
+             data-index="${index}">
+      `);
+      $container.append($thumb);
+    });
+  }
+  $('.vip-collage-container').click(function() {
+    initThumbnails();
+    currentImageIndex = 0;
+    isAnimating = false;
+    $('#galleryModal').addClass('active');
+    $('body').css('overflow', 'hidden');
+    setTimeout(() => {
+      showImage(0, true);
+    }, 100);
+  });
+  $('#closeGallery').click(function() {
+    $('#galleryModal').removeClass('active');
+    $('body').css('overflow', 'auto');
+  });
+  $('#galleryModal').click(function(e) {
+    if (e.target === this) {
+      $('#galleryModal').removeClass('active');
+      $('body').css('overflow', 'auto');
+    }
+  });
+  $(document).keydown(function(e) {
+    if (e.key === 'Escape' && $('#galleryModal').hasClass('active')) {
+      $('#galleryModal').removeClass('active');
+      $('body').css('overflow', 'auto');
+    }
+  });
+  $('#prevBtn').click(function() {
+    if (isAnimating || currentImageIndex <= 0) return;
+    showImage(currentImageIndex - 1);
+  });
+  $('#nextBtn').click(function() {
+    if (isAnimating || currentImageIndex >= galleryImages.length - 1) return;
+    showImage(currentImageIndex + 1);
+  });
+  $(document).on('click', '.thumbnail', function() {
+    if (isAnimating) return;
+    const index = parseInt($(this).data('index'));
+    if (index !== currentImageIndex) {
+      showImage(index);
+    }
+  });
+  $(window).resize(function() {
+    if ($('#galleryModal').hasClass('active')) {
+      updateGlowSize();
+    }
+  });
+});
+</script>
+</body>
+</html>
